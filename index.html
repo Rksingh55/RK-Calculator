@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        calculator
+    </title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .head {
+            margin-left: 480px;
+            margin-top: 50px;
+        }
+
+        #n {
+            width: 330px;
+            height: 60px;
+            color: aqua;
+            border-radius: 10px;
+            background-color: black;
+        
+            font-size: 40px;
+            color: white;
+            border: 3px solid white;
+        }
+
+        .l1 {
+            background-color: yellow;
+            width: 80px;
+            border-radius: 10px;
+            padding: 10px;
+            height: 50px;
+            font-size: 20px;
+        }
+        .l1:hover{
+          background: linear-gradient(red, yellow);
+           
+        }
+
+        .main {
+            background-color: orange;
+            height: 40px;
+            border-bottom: 3px solid red;
+        }
+
+        .l2 {
+            width: 70px;
+            background: linear-gradient(red, orange);
+        }
+
+        .l3 {
+            width: 130px;
+            background: linear-gradient(orange, red);
+        }
+        h4 {
+                color: white;
+                text-shadow: 0 5px 5px red;
+                font-size: 28px;
+                text-align: center;
+            }
+
+
+
+        .l2 {
+            width: 200px;
+        }
+
+        @media screen and (max-width: 420px) {
+            body {
+                background-color: black;
+            }
+
+
+
+            #n {
+                width: 330px;
+                height: 100px;
+
+                border-radius: 10px;
+                background-color: black;
+                font-size: 40px;
+                color: white;
+                margin-left: -3px;
+
+            }
+
+            .head {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+
+            .l1 {
+                background-color: red;
+                width: 80px;
+                border-radius: 10px;
+                padding: 10px;
+                height: 95px;
+                font-size: 40px;
+                border: 1.5px solid white;
+            }
+
+            .main {
+                background-color: orange;
+                height: 40px;
+                border-bottom: 3px solid red;
+
+            }
+
+            .l2 {
+                width: 130px;
+                background: linear-gradient(red, orange);
+            }
+
+            .l3 {
+
+                width: 200px;
+
+                background: linear-gradient(orange, red);
+            }
+
+            h4 {
+                color: white;
+                text-shadow: 0 5px 5px red;
+                font-size: 28px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <h4>Rakesh Calculation</h4>
+    </div>
+    <div class="head">
+        <input type="button" name="n" id="n"><br><br>
+        <form>
+            <input type="button" value="1" onclick="n.value+='1'" class="l1">
+            <input type="button" value="2" onclick="n.value+='2'" class="l1">
+            <input type="button" value="3" onclick="n.value+='2'" class="l1">
+            <input type="button" value="-" onclick="n.value+='-'" class="l1">
+            <br>
+            <input type="button" value="4" onclick="n.value+='4'" class="l1">
+            <input type="button" value="5" onclick="n.value+='5'" class="l1">
+            <input type="button" value="6" onclick="n.value+='6'" class="l1">
+            <input type="button" value="+" onclick="n.value+='+'" class="l1"><br>
+            <input type="button" value="7" onclick="n.value+='7'" class="l1">
+            <input type="button" value="8" onclick="n.value+='8'" class="l1">
+            <input type="button" value="9" onclick="n.value+='9'" class="l1">
+            <input type="button" value="*" onclick="n.value+='*'" class="l1 STAR"><br>
+            <input type="button" value="0" onclick="n.value+='0'" class="l1">
+            <input type="button" value="00" onclick="n.value+='00'" class="l1">
+            <input type="button" value="." onclick="n.value+='.'" class="l1">
+            <input type="button" value="/" onclick="n.value+='/'" class="l1"><br>
+            <input type="button" value="CL" onclick="n.value=''" class="l1 l2">
+            <input type="button" value="=" onclick="n.value=eval(n.value)" class="l1 l3">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
